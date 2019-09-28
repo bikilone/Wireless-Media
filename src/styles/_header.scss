@@ -44,6 +44,7 @@ header {
 
 .hamburger-menu {
   margin-right: 7px;
+  cursor: pointer;
   span {
     background: $primary;
     width: 20px;
@@ -59,6 +60,7 @@ header {
 
 .search-icon {
   fill: $primary;
+  cursor: pointer;
 }
 .nav-dropdown {
   display: block;
