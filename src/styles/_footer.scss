@@ -4,19 +4,16 @@
   justify-content: space-between;
   align-items: center;
   background: $footer;
+  width: 100%;
 }
 
 .social-icons,
 .go-to-top {
   display: flex;
   align-items: center;
-  span {
-    background: white;
-    border-radius: 50%;
-    font-size: 24px;
-    padding: 8px;
-    color: $icons;
+  a {
     margin-right: 18px;
+    text-decoration: none;
     // positioning social icons
     &:first-child {
       margin-left: 12px;
@@ -24,11 +21,26 @@
     &:last-child {
       margin-right: 12px;
     }
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      span {
+        color: $nav-1;
+      }
+    }
+  }
+  span {
+    background: white;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 8px;
+    color: $icons;
   }
 
   @media (min-width: 480px) {
     // positioning social icons
-    span {
+    a {
       margin-right: 16px;
       &:first-child {
         margin-left: 30px;
@@ -40,7 +52,7 @@
   }
   @media (min-width: 768px) {
     // positioning social icons
-    span {
+    a {
       margin-right: 16px;
       &:first-child {
         margin-left: 36px;

@@ -1,4 +1,5 @@
 header {
+  width: 100%;
   height: 60px;
   display: flex;
   align-items: center;
@@ -42,7 +43,7 @@ header {
 }
 
 .hamburger-menu {
-  margin-right: 12px;
+  margin-right: 7px;
   span {
     background: $primary;
     width: 20px;
@@ -154,5 +155,5 @@ header {
   display: block;
   background: linear-gradient(to right, $nav-1, $nav-4);
   height: 10px;
-  width: 100vw;
+  width: 100%;
 }

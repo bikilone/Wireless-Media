@@ -7,7 +7,7 @@
     <title>Wireless Media</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <img src="./assets/wireless-media.png" class="brand" />
 
       <!-- ICONS (480px) -- needs fix -->
@@ -90,16 +90,18 @@
     <main class="main">
       <h1 class="who-we-are-h1">WHO WE ARE</h1>
       <div class="who-we-are">
-        <div class="main-img">
+        <a class="main-img" href="#ourwork">
           <span class="icon-graduation-cap"></span>
-        </div>
+        </a>
         <div class="text">
           <h3>Lorem ipsum</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
             minima quis magnam, vel explicabo.
           </p>
-          <button>SHOW MORE</button>
+          <a href="#showmore">
+            <button>SHOW MORE</button>
+          </a>
         </div>
         <div class="main-img">
           <span class="icon-thumbs-up"></span>
@@ -110,7 +112,9 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
             minima quis magnam, vel explicabo.
           </p>
+          <a href="#showmore">
           <button>SHOW MORE</button>
+          </a>
         </div>
       </div>
       <h1 class="what-we-do-h1">WHAT WE DO</h1>
@@ -123,9 +127,15 @@
     </main>
     <footer class="footer">
       <div class="social-icons">
+        <a href="#facebook">
           <span class="icon-facebook"></span>
+        </a>
+        <a href="#twitter">
           <span class="icon-twitter"></span>
+        </a>
+        <a href="#contact">
           <span class="icon-envelope"></span>
+        </a>
       </div>
       <div class="footer-nav">
         <span>HOME</span>
@@ -134,7 +144,9 @@
         <span>CONTACT</span>
       </div>
       <div class="go-to-top">
+        <a href="#header">
           <span class="icon-arrow-up"></span>
+        </a>
       </div>
     </footer>
   </body>
