@@ -4,42 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Wireless Media</title>
   </head>
   <body>
     <header>
       <img src="./assets/wireless-media.png" class="brand" />
 
       <!-- <img class="nav-icons" src="./assets/home.png" alt="" /> -->
-      <svg
-        fill="red"
-        class="nav-icons"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="24"
-        height="21"
-        viewBox="0 0 24 21"
-      >
-        <image
-          id="Vector_Smart_Object"
-          data-name="Vector Smart Object"
-          width="24"
-          height="21"
-          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAVCAYAAABc6S4mAAAAyklEQVQ4je2T0Q2CMBRFD8QBGIERGKFu4AiM4AboBIzgCP7zoxvoBjqCIxiSSwRf2yDyodGbNCR9793T3oakaRpeVA5cx46kZiesDDgAJ6AMdk0EOOCibwvaaWWmcwJgo5M/m5XaL8zESEAXSWUqDxXqCUYWAhTK2pmKVTQyH2At89xU4vJG1ge09D1QR23iMpF1gC6SVXR8nAaRpTKv9fOcZwDcgKMirhYyXarodMV31PfzPvKs+ihAe+2kt7amw6PfiugP+EYAcAe89iCJKfb9zgAAAABJRU5ErkJggg=="
-        />
-      </svg>
-      <img class="nav-icons" src="./assets/about-us.png" alt="" />
-      <img class="nav-icons" src="./assets/our-work.png" alt="" />
-      <img class="nav-icons" src="./assets/contact.png" alt="" />
+      <!-- ICONS (480px) -- needs fix -->
+      <div class="nav-icons">
+        <img src="./assets/home.png" alt="" class="nav-icon" />
+        <img class="nav-icon" src="./assets/about-us.png" alt="" />
+        <img class="nav-icon" src="./assets/our-work.png" alt="" />
+        <img class="nav-icon" src="./assets/contact.png" alt="" />
+      </div>
 
+      <!-- putting this two elements inside a div for easier positioning -->
       <div class="flex-end">
-        <!-- putting this two elements inside a div for easier positioning -->
         <div class="hamburger-menu">
           <span></span>
           <span></span>
           <span></span>
         </div>
-
+        <!-- Search icon -->
         <svg
           class="search-icon"
           xmlns="http://www.w3.org/2000/svg"
@@ -53,15 +40,20 @@
           <path d="M0 0h24v24H0z" fill="none" />
         </svg>
       </div>
-      <ul class="nav">
-        <li class="nav-home">HOME</li>
-        <li class="nav-about-us">ABOUT US</li>
-        <li class="nav-our-work">OUR WORK</li>
-        <li class="nav-contact">CONTACT</li>
+      <!-- Nav (dropdwon) for 320px -->
+      <ul class="nav-dropdown">
+        <li class="nav-dropdown-home">HOME</li>
+        <li class="nav-dropdown-about-us">ABOUT US</li>
+        <li class="nav-dropdown-our-work">OUR WORK</li>
+        <li class="nav-dropdown-contact">CONTACT</li>
       </ul>
-      <div class="search">
-        <img src="" alt="" />
-      </div>
+
+      <ul class="nav-tablet">
+        <li>HOME /</li>
+        <li>ABOUT US /</li>
+        <li>OUR WORK /</li>
+        <li>CONTACT</li>
+      </ul>
     </header>
     <div class="header-underline"></div>
   </body>

@@ -2,28 +2,34 @@ header {
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: stretch;
+  justify-content: space-between;
   @media (min-width: 480px) {
-    //   for easier positioning icons
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+}
+.brand {
+  height: 36px;
+  width: 120px;
+  margin-left: 12px;
+  @media (min-width: 480px) {
+    margin-left: 21px;
+    margin-right: 48px;
   }
 }
 
 .flex-end {
   display: flex;
-  //   margin-left: 114px;
-  position: absolute;
-  right: 20px;
-}
-
-.brand {
-  height: 36px;
-  width: 120px;
-  margin-left: 12px;
+  margin-left: 120px;
+  margin-right: 6px;
+  @media (min-width: 480px) {
+    flex-grow: 0.1;
+    margin-left: 50px;
+    margin-right: 20px;
+  }
 }
 
 .hamburger-menu {
-  margin-right: 10px;
+  margin-right: 12px;
   span {
     background: $primary;
     width: 20px;
@@ -40,7 +46,7 @@ header {
 .search-icon {
   fill: $primary;
 }
-.nav {
+.nav-dropdown {
   display: none;
   position: absolute;
   top: 60px;
@@ -54,16 +60,16 @@ header {
     margin-bottom: 2px;
     font-size: 11px;
   }
-  .nav-home {
+  .nav-dropdown-home {
     background: $nav-1;
   }
-  .nav-about-us {
+  .nav-dropdown-about-us {
     background: $nav-2;
   }
-  .nav-our-work {
+  .nav-dropdown-our-work {
     background: $nav-3;
   }
-  .nav-contact {
+  .nav-dropdown-contact {
     background: $nav-4;
   }
 }
@@ -72,16 +78,29 @@ header {
   display: block;
   background: linear-gradient(to right, $nav-1, $nav-4);
   height: 10px;
-  width: 100%;
+  width: 100vw;
+}
+.nav-icons {
+  min-width: 200px;
+  display: none;
+  // margin-right: 50px;
+  flex-grow: 0.5;
+  @media (min-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
-.nav-icons {
+.nav-tablet {
+  list-style: none;
   display: none;
-
-  @media (min-width: 480px) {
-    display: inline-block;
-    &:hover {
-      fill: red;
-    }
+  li {
+    color: $primary;
+  }
+  @media (min-width: 768px) {
+    display: flex;
   }
 }
