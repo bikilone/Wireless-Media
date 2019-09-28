@@ -1,66 +1,142 @@
 .main {
-  text-align: center;
-  h1 {
-    font-size: 27px;
-    color: $secondary;
-    font-weight: 200;
-    margin-bottom: 12px;
+  width: 182px;
+  margin: 0 auto;
+  @media (min-width: 480px) {
+    width: 420px;
   }
 }
 .who-we-are-h1 {
+  font-size: 27px;
+  color: $secondary;
+  font-weight: 200;
+  margin-bottom: 12px;
   margin-top: 22px;
+  @media (min-width: 768px) {
+    margin-top: 46px;
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
 }
 
 .main-img {
   width: 169px;
   height: 102px;
-  background: $primary;
+  background: $light;
   display: flex;
   justify-content: center;
   align-items: center;
+  span {
+    font-size: 40px;
+    color: $icons;
+    @media (min-width: 480px) {
+      height: 46px;
+    }
+  }
+  @media (min-width: 480px) {
+    width: 190px;
+    height: 114px;
+    margin-bottom: 40px;
+  }
 }
 
 .who-we-are {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 170px;
+  width: 100%;
   margin: 0 auto;
+  @media (min-width: 480px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .text {
+    @media (min-width: 480px) {
+      width: 190px;
+      height: 114px;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+    }
     h3 {
       font-size: 15px;
       float: left;
       margin-top: 8px;
       font-weight: 100;
+      @media (min-width: 480px) {
+        margin-bottom: 22px;
+        margin-top: 0;
+      }
     }
     p {
       display: none;
+      font-size: 12px;
+      @media (min-width: 480px) {
+        display: inline-block;
+      }
     }
     button {
       float: right;
       margin-top: 30px;
       margin-bottom: 22px;
-      width: 72px;
+      width: 74px;
       height: 26px;
       background: $tertiary;
       border: none;
       outline: none;
       cursor: pointer;
       font-size: 11px;
+      padding-left: 2px;
+      border-radius: 4px;
+      @media (min-width: 480px) {
+        align-self: flex-end;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
     }
   }
 }
 .what-we-do-h1 {
+  font-size: 27px;
+  color: $secondary;
+  font-weight: 200;
+  margin-bottom: 12px;
   margin-top: 9px;
   margin-bottom: 16px;
+  @media (min-width: 480px) {
+    margin-top: 6px;
+    margin-bottom: 24px;
+  }
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 .what-we-do {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 170px;
+  // width: 170px;
   margin: 0 auto;
+  @media (min-width: 480px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   .main-img {
     margin-bottom: 27px;
+    @media (min-width: 480px) {
+      &:nth-child(1) {
+        order: 1;
+      }
+      &:nth-child(2) {
+        order: 3;
+      }
+      &:nth-child(3) {
+        order: 2;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
+    }
   }
 }
