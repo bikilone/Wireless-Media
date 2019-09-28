@@ -61,7 +61,8 @@ header {
   fill: $primary;
 }
 .nav-dropdown {
-  display: none;
+  display: block;
+  z-index: 1;
   position: absolute;
   top: 60px;
   width: 100%;
@@ -71,7 +72,7 @@ header {
     display: flex;
     align-items: center;
     padding-left: 16px;
-    margin-bottom: 2px;
+    // margin-bottom: 2px;
     font-size: 11px;
   }
   .nav-dropdown-home {
@@ -130,21 +131,21 @@ header {
   }
 }
 .search-input {
-  width: 94vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  width: 94%;
+  margin-left: 3%;
+  margin-right: 3%;
   height: 24px;
   border: 1px solid $primary;
   margin-bottom: 8px;
   padding-left: 8px;
   padding-right: 8px;
   font-size: 12px;
-  display: none;
+  display: block;
   @media (min-width: 480px) {
     // ?
-    width: 80vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   @media (min-width: 768px) {
     // change position

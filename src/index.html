@@ -36,13 +36,13 @@
 
       <!-- putting this two elements inside a div for easier positioning -->
       <div class="flex-end">
-        <div class="hamburger-menu">
+        <div class="hamburger-menu" id="menu">
           <span></span>
           <span></span>
           <span></span>
         </div>
         <!-- Search icon -->
-        <svg
+        <svg id="search-icon"
           class="search-icon"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -57,7 +57,7 @@
       </div>
 
       <!-- Nav (dropdwon) for 320px -->
-      <ul class="nav-dropdown">
+      <ul class="hide " id="dropdown">
         <li class="nav-dropdown-home">HOME</li>
         <li class="nav-dropdown-about-us">ABOUT US</li>
         <li class="nav-dropdown-our-work">OUR WORK</li>
@@ -65,7 +65,7 @@
       </ul>
     </header>
     <!-- Search input -->
-    <input class="search-input" type="text" />
+    <input class="hide" type="text" id="input"/>
     <div class="header-underline"></div>
     <!-- Slider -->
     <div class="slider">
