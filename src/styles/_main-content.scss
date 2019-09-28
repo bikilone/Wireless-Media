@@ -1,0 +1,66 @@
+.main {
+  text-align: center;
+  h1 {
+    font-size: 27px;
+    color: $secondary;
+    font-weight: 200;
+    margin-bottom: 12px;
+  }
+}
+.who-we-are-h1 {
+  margin-top: 22px;
+}
+
+.main-img {
+  width: 169px;
+  height: 102px;
+  background: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-we-are {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
+  margin: 0 auto;
+  .text {
+    h3 {
+      font-size: 15px;
+      float: left;
+      margin-top: 8px;
+      font-weight: 100;
+    }
+    p {
+      display: none;
+    }
+    button {
+      float: right;
+      margin-top: 30px;
+      margin-bottom: 22px;
+      width: 72px;
+      height: 26px;
+      background: $tertiary;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 11px;
+    }
+  }
+}
+.what-we-do-h1 {
+  margin-top: 9px;
+  margin-bottom: 16px;
+}
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
+  margin: 0 auto;
+  .main-img {
+    margin-bottom: 27px;
+  }
+}

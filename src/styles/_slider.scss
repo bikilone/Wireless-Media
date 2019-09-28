@@ -62,8 +62,8 @@
 }
 
 .slider-dots {
+  display: none;
   position: absolute;
-  display: flex;
   bottom: 12px;
   width: 40px;
   justify-content: space-between;
@@ -73,6 +73,10 @@
   div {
     border: 5px solid $primary;
     border-radius: 50%;
+  }
+
+  @media (min-width: 480px) {
+    display: flex;
   }
   @media (min-width: 768px) {
     bottom: 16px;
