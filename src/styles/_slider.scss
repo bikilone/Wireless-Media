@@ -1,0 +1,80 @@
+.slider {
+  position: relative;
+  height: 120px;
+  background-image: url("../assets/people-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $tertiary;
+  @media (min-width: 480px) {
+    height: 200px;
+    background-image: url("../assets/people-background-480px.png");
+    justify-content: space-around;
+    .slider-img {
+      width: 134px;
+      margin-left: 48px;
+      margin-right: 18px;
+    }
+  }
+  @media (min-width: 768px) {
+    height: 310px;
+    background-image: url("../assets/people-background-768px.png");
+    .slider-img {
+      width: 170px;
+      margin-left: 120px;
+      margin-right: 24px;
+    }
+  }
+}
+.slider-text {
+  display: none;
+  @media (min-width: 480px) {
+    display: inline;
+    font-size: 37px;
+    color: $secondary;
+    width: 260px;
+    margin-right: 22px;
+  }
+  @media (min-width: 768px) {
+    font-size: 48px;
+    width: 330px;
+    margin-right: 125px;
+  }
+}
+
+.text-slider {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 6px;
+  padding-right: 6px;
+  height: 60px;
+  border-top: 1px solid $primary;
+  border-bottom: 1px solid $primary;
+  color: $secondary;
+  font-weight: bold;
+  @media (min-width: 480px) {
+    display: none;
+  }
+}
+
+.slider-dots {
+  position: absolute;
+  display: flex;
+  bottom: 12px;
+  width: 40px;
+  justify-content: space-between;
+  div:nth-child(1) {
+    border-color: $nav-1;
+  }
+  div {
+    border: 5px solid $primary;
+    border-radius: 50%;
+  }
+  @media (min-width: 768px) {
+    bottom: 16px;
+  }
+}
