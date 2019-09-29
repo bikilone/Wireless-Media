@@ -77,6 +77,8 @@
 .slider-dots {
   display: none;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 12px;
   width: 40px;
   -webkit-box-pack: justify;
