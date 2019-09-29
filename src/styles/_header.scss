@@ -40,7 +40,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   margin-left: 120px;
-  margin-right: 6px;
+  margin-right: 20px;
   @media (min-width: 480px) {
     -webkit-box-flex: 0.1;
     -ms-flex-positive: 0.1;
@@ -57,10 +57,16 @@ header {
 .hamburger-menu {
   margin-right: 12px;
   cursor: pointer;
+  &:hover,
+  &:active {
+    span {
+      background: $nav-1;
+    }
+  }
   span {
     background: $primary;
-    width: 20px;
-    height: 5px;
+    width: 21px;
+    height: 4px;
     display: block;
     margin-bottom: 2px;
     border-radius: 10px;
@@ -74,6 +80,10 @@ header {
   color: $primary;
   font-size: 16px;
   cursor: pointer;
+  &:hover,
+  &:active {
+    color: $nav-1;
+  }
 }
 .nav-dropdown {
   display: block;
@@ -218,6 +228,6 @@ header {
   );
   background: -o-linear-gradient(left, $nav-1, $nav-4);
   background: linear-gradient(to right, $nav-1, $nav-4);
-  height: 10px;
+  height: 8px;
   width: 100%;
 }

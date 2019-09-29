@@ -1,9 +1,14 @@
+.sliders {
+  border-bottom: 1px solid white;
+}
+
 .slider {
   position: relative;
   height: 120px;
-  background-image: url("../assets/people-background.png");
+  background-image: url("../assets/people-background-768px.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,9 +19,11 @@
   -ms-flex-align: center;
   align-items: center;
   background-color: $tertiary;
+  .slider-img {
+    height: 98px;
+  }
   @media (min-width: 480px) {
     height: 200px;
-    background-image: url("../assets/people-background-480px.png");
     -ms-flex-pack: distribute;
     justify-content: space-around;
     .slider-img {
@@ -27,7 +34,6 @@
   }
   @media (min-width: 768px) {
     height: 310px;
-    background-image: url("../assets/people-background-768px.png");
     .slider-img {
       width: 170px;
       margin-left: 120px;
@@ -55,11 +61,11 @@
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  // display: flex;
-  // width: 100%;
+  display: flex;
+  width: 100%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -69,7 +75,6 @@
   border-top: 1px solid $primary;
   border-bottom: 1px solid $primary;
   color: $secondary;
-  font-weight: bold;
   @media (min-width: 480px) {
     display: none;
   }
@@ -80,6 +85,7 @@
   left: 6px;
   top: 50%;
   transform: translateY(-50%);
+  color: $primary;
 }
 
 .arrow-right {
@@ -87,10 +93,13 @@
   right: 6px;
   top: 50%;
   transform: translateY(-50%);
+  color: $primary;
 }
 
 .carousel {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-slider {
