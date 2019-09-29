@@ -12,26 +12,34 @@
 
       <!-- ICONS (480px) -- needs fix -->
       <div class="nav-icons">
-        <img class="nav-icon" src="./assets/home.png" alt="" />
-        <img class="nav-icon" src="./assets/about-us.png" alt="" />
-        <img class="nav-icon" src="./assets/our-work.png" alt="" />
-        <img class="nav-icon" src="./assets/contact.png" alt="" />
+        <a href="#home" class="nav-icon">
+          <span class="icon icon-home"></span>
+        </a>
+        <a href="#who-we-are" class="nav-icon">
+          <span class="icon icon-question-circle"> </span>
+        </a>
+        <a href="#our-work" class="nav-icon">
+          <span class="icon icon-graduation-cap"> </span>
+        </a>
+        <a href="#contact-us" class="nav-icon">
+          <span class="icon icon-envelope"> </span>
+        </a>
       </div>
       <!-- Nav (768px) -->
       <ul class="nav-tablet">
         <li>
-          <a>HOME</a>
+          <a href="#home">HOME</a>
         </li>
         <li>/</li>
         <li>
-          <a>ABOUT US</a>
+          <a href="#about-us">ABOUT US</a>
         </li>
         <li>/</li>
         <li>
-          <a>OUR WORK</a>
+          <a href="#our-work">OUR WORK</a>
         </li>
         <li>/</li>
-        <a>CONTACT</a>
+        <a href="#contact-us">CONTACT</a>
       </ul>
 
       <!-- putting this two elements inside a div for easier positioning -->
@@ -42,19 +50,7 @@
           <span></span>
         </div>
         <!-- Search icon -->
-        <svg
-          id="search-icon"
-          class="search-icon"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-          />
-          <path d="M0 0h24v24H0z" fill="none" />
-        </svg>
+        <span class="icon icon-search search-icon" id="search-icon"></span>
       </div>
 
       <!-- Nav (dropdwon) for 320px -->
@@ -82,9 +78,9 @@
     </div>
     <!-- Text slider for 320px -->
     <div class="text-slider">
-      <img src="./assets/arrow-left.png" alt="" />
+      <span class="icon icon-arrow-left"></span>
       <p>LOREM IPSUM DOLOR SIT</p>
-      <img src="./assets/arrow-right.png" alt="" />
+      <span class="icon icon-arrow-right"></span>
     </div>
 
     <!-- Main -->
@@ -104,7 +100,7 @@
             <button>SHOW MORE</button>
           </a>
         </div>
-        <a class="main-img">
+        <a class="main-img" href="#our-work">
           <span class="icon-thumbs-up"></span>
         </a>
         <div class="text">
@@ -142,15 +138,23 @@
         <a href="#twitter">
           <span class="icon-twitter"></span>
         </a>
-        <a href="#contact">
+        <a href="#contact-us">
           <span class="icon-envelope"></span>
         </a>
       </div>
       <div class="footer-nav">
-        <span>HOME</span>
-        <span>ABOUT US</span>
-        <span>OUR WORK</span>
-        <span>CONTACT</span>
+        <a href="">
+          <span>HOME</span>
+        </a>
+        <a href="">
+          <span>ABOUT US</span>
+        </a>
+        <a href="">
+          <span>OUR WORK</span>
+        </a>
+        <a href="">
+          <span>CONTACT</span>
+        </a>
       </div>
       <div class="go-to-top">
         <a href="#header">

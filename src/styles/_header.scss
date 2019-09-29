@@ -16,8 +16,8 @@ header {
   width: 120px;
   margin-left: 12px;
   @media (min-width: 480px) {
-    margin-left: 21px;
-    margin-right: 48px;
+    margin-left: 20px;
+    margin-right: 46px;
   }
   @media (min-width: 768px) {
     margin-left: 32px;
@@ -43,7 +43,7 @@ header {
 }
 
 .hamburger-menu {
-  margin-right: 7px;
+  margin-right: 12px;
   cursor: pointer;
   span {
     background: $primary;
@@ -59,7 +59,8 @@ header {
 }
 
 .search-icon {
-  fill: $primary;
+  color: $primary;
+  font-size: 16px;
   cursor: pointer;
 }
 .nav-dropdown {
@@ -105,9 +106,27 @@ header {
   }
 }
 
+.nav-icon {
+  font-size: 21px;
+  color: $primary;
+  &:visited {
+    color: $nav-4;
+  }
+  &:focus {
+    color: $nav-3;
+  }
+  &:hover {
+    color: $nav-1;
+  }
+  &:active {
+    color: $nav-2;
+  }
+}
+
 .nav-tablet {
   list-style: none;
   display: none;
+  flex-grow: 0.2;
   a {
     color: $primary;
     text-decoration: none;
@@ -118,17 +137,17 @@ header {
     min-width: 376px;
     justify-content: space-between;
     font-size: 16px;
+    a:visited {
+      color: $nav-4;
+    }
+    a:focus {
+      color: $nav-3;
+    }
     a:hover {
       color: $nav-1;
     }
     a:active {
       color: $nav-2;
-    }
-    a:focus {
-      color: $nav-3;
-    }
-    a:visited {
-      color: $nav-4;
     }
   }
 }
