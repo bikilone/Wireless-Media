@@ -28,7 +28,28 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              sourceMap: true,
+              config: {
+                path: "postcss.config.js"
+              }
+            }
+          },
+          {
+            loader: "sass-loader",
+            options: { sourceMap: true }
+          }
+        ]
       }
     ]
   }

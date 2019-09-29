@@ -1,13 +1,7 @@
 .footer {
   height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background: $footer;
   width: 100%;
@@ -22,11 +16,7 @@
 
 .social-icons,
 .go-to-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   a {
     margin-right: 18px;
@@ -87,16 +77,9 @@
     color: $secondary;
   }
   @media (min-width: 768px) {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-preferred-size: 300px;
     flex-basis: 300px;
     font-size: 14px;
     margin-left: 30px;
