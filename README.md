@@ -1,4 +1,4 @@
-# Install dependecies with: npm i
+# Install dependencies with: npm i
 
 # To start dev server run: npm start
 
