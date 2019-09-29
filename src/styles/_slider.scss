@@ -4,13 +4,20 @@
   background-image: url("../assets/people-background.png");
   background-repeat: no-repeat;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: $tertiary;
   @media (min-width: 480px) {
     height: 200px;
     background-image: url("../assets/people-background-480px.png");
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     .slider-img {
       width: 134px;
@@ -45,9 +52,15 @@
 }
 
 .text-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-left: 6px;
   padding-right: 6px;
@@ -66,6 +79,8 @@
   position: absolute;
   bottom: 12px;
   width: 40px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   div:nth-child(1) {
     border-color: $nav-1;
@@ -76,6 +91,8 @@
   }
 
   @media (min-width: 480px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   @media (min-width: 768px) {
