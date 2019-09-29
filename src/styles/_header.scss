@@ -32,7 +32,7 @@ header {
   margin-left: 120px;
   margin-right: 20px;
   @media (min-width: 480px) {
-    flex-grow: 0.1;
+    // flex-grow: 0.1;
     margin-left: 50px;
     margin-right: 20px;
   }
@@ -105,7 +105,7 @@ header {
 .nav-icons {
   min-width: 200px;
   display: none;
-  flex-grow: 0.5;
+  // flex-grow: 0.5;
   @media (min-width: 480px) {
     display: flex;
     justify-content: space-between;
@@ -135,7 +135,7 @@ header {
 .nav-tablet {
   list-style: none;
   display: none;
-  flex-grow: 0.2;
+  // flex-grow: 0.2;
   a {
     color: $primary;
     text-decoration: none;

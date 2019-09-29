@@ -14,11 +14,11 @@
   align-items: center;
   background-color: $tertiary;
   .slider-img {
-    height: 98px;
+    width: 100px;
   }
   @media (min-width: 480px) {
     height: 200px;
-    justify-content: space-around;
+    justify-content: center;
     .slider-img {
       width: 134px;
       margin-left: 48px;
@@ -38,13 +38,13 @@
   display: none;
   @media (min-width: 480px) {
     display: inline;
-    font-size: 37px;
+    font-size: 36px;
     color: $secondary;
     width: 260px;
     margin-right: 22px;
   }
   @media (min-width: 768px) {
-    font-size: 48px;
+    font-size: 45px;
     width: 330px;
     margin-right: 125px;
   }
