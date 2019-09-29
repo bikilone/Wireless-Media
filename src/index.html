@@ -42,6 +42,14 @@
         <a href="#contact-us">CONTACT</a>
       </ul>
 
+      <!-- Nav (dropdwon) for 320px -->
+      <ul class="hide " id="dropdown">
+        <li class="nav-dropdown-home">HOME</li>
+        <li class="nav-dropdown-about-us">ABOUT US</li>
+        <li class="nav-dropdown-our-work">OUR WORK</li>
+        <li class="nav-dropdown-contact">CONTACT</li>
+      </ul>
+
       <!-- putting this two elements inside a div for easier positioning -->
       <div class="flex-end">
         <div class="hamburger-menu" id="menu">
@@ -52,14 +60,6 @@
         <!-- Search icon -->
         <span class="icon icon-search search-icon" id="search-icon"></span>
       </div>
-
-      <!-- Nav (dropdwon) for 320px -->
-      <ul class="hide " id="dropdown">
-        <li class="nav-dropdown-home">HOME</li>
-        <li class="nav-dropdown-about-us">ABOUT US</li>
-        <li class="nav-dropdown-our-work">OUR WORK</li>
-        <li class="nav-dropdown-contact">CONTACT</li>
-      </ul>
     </header>
     <!-- Search input -->
     <div class="header-input">
@@ -67,22 +67,36 @@
     </div>
     <div class="header-underline"></div>
     <!-- Slider -->
-    <div class="slider">
-      <img class="slider-img" src="./assets/people.png" alt="" />
-      <div class="slider-text">
-        <p>LOREM IPSUM DOLOR SIT</p>
-      </div>
-      <div class="slider-dots">
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="sliders">
+      <!-- Slider 1 -->
+      <div class="slider">
+        <img class="slider-img" src="./assets/people.png" alt="" />
+        <div class="slider-text">
+          <p>LOREM IPSUM DOLOR SIT</p>
+        </div>
+        <div class="slider-dots">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
     <!-- Text slider for 320px -->
-    <div class="text-slider">
-      <span class="icon icon-arrow-left"></span>
-      <p>LOREM IPSUM DOLOR SIT</p>
-      <span class="icon icon-arrow-right"></span>
+    <div class="text-sliders">
+      <span class="icon icon-arrow-left arrow-left" id="arrow-left"></span>
+      <div class="carousel" id="carousel">
+        <div class="text-slider">
+          <p>LOREM IPSUM DOLOR SIT</p>
+        </div>
+        <div class="text-slider">
+          <p>LOREM IPSUM DOLOR SIT</p>
+        </div>
+        <div class="text-slider">
+          <p>LOREM IPSUM DOLOR SIT</p>
+        </div>
+      </div>
+
+      <span class="icon icon-arrow-right arrow-right" id="arrow-right"></span>
     </div>
 
     <!-- Main -->
