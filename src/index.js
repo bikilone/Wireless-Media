@@ -85,6 +85,7 @@ arrowRight.addEventListener("click", () => {
 sliderDot1.addEventListener("click", () => {
   const size = sliders.clientWidth / numOfSlides;
   sliders.style.transform = "translateX(0)";
+  textSliders.style.transform = "translateX(0)";
   sliderDot1.style.borderColor = greenColor;
   sliderDot2.style.borderColor = grayColor;
   sliderDot3.style.borderColor = grayColor;

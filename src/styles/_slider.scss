@@ -86,6 +86,7 @@
   left: 6px;
   top: 209px;
   color: $primary;
+  cursor: pointer;
   @media (min-width: 480px) {
     display: none;
   }
@@ -97,6 +98,7 @@
   right: 6px;
   top: 209px;
   color: $primary;
+  cursor: pointer;
   @media (min-width: 480px) {
     display: none;
   }
@@ -114,6 +116,9 @@
   justify-content: center;
   align-items: center;
   width: 33.33%;
+}
+.slider-dot {
+  cursor: pointer;
 }
 
 .slider-dots {
