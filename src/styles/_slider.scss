@@ -1,8 +1,22 @@
 .sliders {
   border-bottom: 1px solid white;
+  width: 300%;
+  height: 120px;
+  @media (min-width: 480px) {
+    height: 200px;
+  }
+  @media (min-width: 768px) {
+    height: 310px;
+  }
+}
+
+.slider-transition {
+  transition: transform 0.4s ease-in-out;
 }
 
 .slider {
+  float: left;
+  width: 33.33%;
   position: relative;
   height: 120px;
   background-image: url("../assets/people-background-768px.png");
@@ -53,34 +67,39 @@
 .text-sliders {
   position: relative;
   display: flex;
-  width: 100%;
+  width: 300%;
   justify-content: center;
   align-items: center;
-  padding-left: 6px;
-  padding-right: 6px;
   height: 60px;
   border-top: 1px solid $primary;
   border-bottom: 1px solid $primary;
   color: $secondary;
+
   @media (min-width: 480px) {
     display: none;
   }
 }
 
 .arrow-left {
+  z-index: 1;
   position: absolute;
   left: 6px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 212px;
   color: $primary;
+  @media (min-width: 480px) {
+    display: none;
+  }
 }
 
 .arrow-right {
+  z-index: 1;
   position: absolute;
   right: 6px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 212px;
   color: $primary;
+  @media (min-width: 480px) {
+    display: none;
+  }
 }
 
 .carousel {
@@ -90,18 +109,20 @@
 }
 
 .text-slider {
+  float: left;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 33.33%;
 }
 
 .slider-dots {
   display: none;
+  z-index: 1;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 12px;
+  top: 245px;
   width: 40px;
   justify-content: space-between;
   div:nth-child(1) {
@@ -116,6 +137,6 @@
     display: flex;
   }
   @media (min-width: 768px) {
-    bottom: 16px;
+    top: 375px;
   }
 }
