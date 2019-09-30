@@ -11,6 +11,7 @@ const sliderDot3 = document.getElementById("slider-dot-3");
 const arrowLeft = document.getElementById("arrow-left");
 const arrowRight = document.getElementById("arrow-right");
 const textSliders = document.getElementById("text-sliders");
+const sliderDots = document.getElementsByClassName("slider-dot");
 
 menu.addEventListener("click", event => {
   dropdown.classList.toggle("nav-dropdown");
@@ -53,6 +54,13 @@ arrowLeft.addEventListener("click", () => {
     return;
   }
   counter--;
+  for (let i = 0; i < sliderDots.length; i++) {
+    if (i === counter) {
+      sliderDots[i].style.borderColor = greenColor;
+    } else {
+      sliderDots[i].style.borderColor = grayColor;
+    }
+  }
   textSliders.style.transform = `translateX(${-counter * size}px)`;
   sliders.style.transform = `translateX(${-counter * size}px)`;
 });
@@ -62,6 +70,13 @@ arrowRight.addEventListener("click", () => {
     return;
   }
   counter++;
+  for (let i = 0; i < sliderDots.length; i++) {
+    if (i === counter) {
+      sliderDots[i].style.borderColor = greenColor;
+    } else {
+      sliderDots[i].style.borderColor = grayColor;
+    }
+  }
 
   textSliders.style.transform = `translateX(${-counter * size}px)`;
   sliders.style.transform = `translateX(${-counter * size}px)`;
